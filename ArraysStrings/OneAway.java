@@ -1,4 +1,4 @@
-package ctci;
+package ctci.ArraysStrings;
 public class OneAway {
 	public static void main(String args[]){
 		String string1 = "pale";

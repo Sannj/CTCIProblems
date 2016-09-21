@@ -1,4 +1,4 @@
-package ctci;
+package ctci.ArraysStrings;
 
 public class URLify {
 

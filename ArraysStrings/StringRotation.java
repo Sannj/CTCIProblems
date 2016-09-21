@@ -1,4 +1,4 @@
-package ctci;
+package ctci.ArraysStrings;
 public class StringRotation {
 	public static void main(String args[]){
 		String s1 = "water";

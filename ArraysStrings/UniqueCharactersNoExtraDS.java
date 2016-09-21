@@ -1,4 +1,4 @@
-package ctci;
+package ctci.ArraysStrings;
 
 /**
  * Created by sanjanabadam on 7/11/16.

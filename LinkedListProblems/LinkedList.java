@@ -1,6 +1,5 @@
 package ctci.LinkedListProblems;
 
-import ctci.LinkedListProblems.Node;
 
 public class LinkedList {
 
@@ -13,7 +12,29 @@ public class LinkedList {
 		 end = null;
 	 }
 
-	
+	 public int size(){
+		 int count = 0;
+		 Node temp = head;
+		 while(temp!= null){
+			 count++;
+			 temp = temp.next;
+		 }
+		 return count;
+	 }
+
+	 public int get(int i){
+		 Node temp = head;
+		 int index = 0;
+		 while(temp!=null){
+			 if(index == i){
+				 return temp.data;
+			 }
+			 index++;
+			 temp = temp.next;
+		 }
+		 return -1;
+	 }
+
 	public void add(int valToAdd){
 		Node n = new Node(valToAdd);
 		if(head == null){

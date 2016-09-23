@@ -14,7 +14,15 @@ public class RotateMatrix{
 				mat[i][j] = scan.nextInt();
 			}
 		}
-		mat = swapRows(transpose(mat, n), n);
+		mat = swapColumns(transpose(mat, n),n);
+		for(int i = 0; i < n ; i++){
+			for(int j = 0; j < n; j++){
+				System.out.print(mat[i][j]+ " ");
+			}
+			System.out.println();
+		}
+		/*mat = swapRows(transpose(mat, n), n);
+
 
 		System.out.println("The resulting matrix is : ");
 		for(int i = 0; i < n ; i++){
@@ -22,7 +30,7 @@ public class RotateMatrix{
 				System.out.print(mat[i][j]+ " ");
 			}
 			System.out.println();
-		}
+		}*/
 
 	}
 
@@ -46,6 +54,19 @@ public class RotateMatrix{
 				int temp = mat[i][j];
 				mat[i][j] = mat[k][j];
 				mat[k][j] = temp;
+			}
+			k--;
+		}
+		return mat;
+	}
+
+	public static int[][] swapColumns(int[][] mat, int n){
+		int k = n-1;
+		for(int j = 0; j < n/2; j++){
+			for(int i = 0 ; i < n; i++){
+				int temp = mat[i][j];
+				 mat[i][j] = mat[i][k];
+				mat[i][k] = temp;
 			}
 			k--;
 		}

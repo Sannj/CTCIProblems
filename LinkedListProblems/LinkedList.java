@@ -128,7 +128,7 @@ public class LinkedList {
 		}
 		Node nn = temp;
 		while(nn != null){
-			System.out.print(nn.data+" ");
+			//System.out.print(nn.data+" ");
 			nn = nn.next;
 		}
 		
